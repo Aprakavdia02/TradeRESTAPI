@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS TRADE;
+
+CREATE TABLE TRADE (
+  id INT PRIMARY KEY,
+  type VARCHAR(250) NOT NULL,
+-- user_id INT,
+--  user_name VARCHAR(250),
+ user VARCHAR(250),
+  symbol VARCHAR(250) NOT NULL,
+  shares INT NOT NULL,
+  price DOUBLE,
+  timestamp TIMESTAMP,
+);
